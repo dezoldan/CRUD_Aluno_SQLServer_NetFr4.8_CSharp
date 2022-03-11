@@ -1,0 +1,6 @@
+CREATE PROCEDURE uspConsultaTodosAlunos
+AS 
+BEGIN
+SELECT * FROM Alunos
+ODER BY DataCreate DESC
+END
