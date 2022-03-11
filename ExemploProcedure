@@ -1,3 +1,5 @@
+/// Crie as procedures em "ProcedimentosArmazenados" no seu SGBD do SqlServer, utilizando o Microsoft SQL Server Management Studio
+
 CREATE PROCEDURE uspConsultaTodosAlunos
 AS 
 BEGIN
