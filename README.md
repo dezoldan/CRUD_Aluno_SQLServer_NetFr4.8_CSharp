@@ -1,0 +1,3 @@
+# CRUD_ALuno_SQLServer_NetFram4.8_C-
+Um exemplo prático e simples de como fazer um CRUD, (Create, Read, Update, Delete), síncrono, no SqlServer, na entidade "Aluno", com C#, utilizando OO - orientação à objeto - e o padrão de projeto em três camadas: Acesso a dados, Negócios e Objeto Transferência, DTO. O exemplo utiliza procedures criadas no SGBD. É dado um exemplo de procedure. O FrontEnd ficou de fora do exemplo. É necessário implementar. Use a coleção para popular um controle, no WebForms, através da propriedade "DataSource".
+Atualmente, com a evolução dos sistemas, como EF6, por exemplo, podemos utilizar a programação assíncrona e o Blazor para fazer as mesmas tarefas que as implementadas nesse projeto.
