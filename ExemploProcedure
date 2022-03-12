@@ -1,6 +1,47 @@
 /// Crie as procedures em "ProcedimentosArmazenados" no seu SGBD do SqlServer, 
 /// Utilizando o Microsoft SQL Server Management Studio
 
+CREATE PROCEDURE uspInserirAluno
+
+@PrimeiroNome nvarchar(50),
+@SegundoNome nvarchar(50),
+@Sobrenome nvarchar(50),
+@DiaDoNascimento int,
+@MesDoNascimento int,
+@AnoDoNascimento int,
+@MaeAlunoID int,
+@AlunoStatus int
+
+AS
+BEGIN
+
+	INSERT INTO Alunos
+	(
+    PrimeiroNome
+    SegundoNome
+    Sobrenome
+    DiaDoNascimento
+    MesDoNascimento
+    MaeAlunoID
+    DataCreate
+    AlunoStatus
+	)
+	VALUES
+	(
+    @PrimeiroNome
+    @SegundoNome
+    @Sobrenome
+    @DiaDoNascimento
+    @MesDoNascimento
+    @MaeAlunoID    
+    @AlunoStatus
+    GETDATE()
+	)
+	SELECT @@IDENTITY AS Retorno
+END
+
+/////////////
+
 CREATE PROCEDURE uspAlterarPrimeiroNomeAluno
 @AlunoID int,
 @PrimeiroNome nvarchar(50)
