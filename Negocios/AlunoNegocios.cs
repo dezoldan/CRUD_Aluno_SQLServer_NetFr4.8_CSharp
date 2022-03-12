@@ -65,8 +65,8 @@ namespace Negocios
                         PrimeiroNome = Convert.ToString(linha["PrimeiroNome"]),
                         SegundoNome = Convert.ToString(linha["SegundoNome"]),
                         Sobrenome = Convert.ToString(linha["Sobrenome"]),
-                        DiaDoNascimento = Convert.ToString(linha["DiaDoNascimento"]),
-                        MesDoNascimento = Convert.ToString(linha["MesDoNascimento"]),
+                        DiaDoNascimento = Convert.ToInt32(linha["DiaDoNascimento"]),
+                        MesDoNascimento = Convert.ToInt32(linha["MesDoNascimento"]),
                         AnoDoNascimento = Convert.ToInt32(linha["AnoDoNascimento"]),
                         MaeAlunoID = Convert.ToInt32(linha["MaeAlunoID"]),
                         DataCreate = Convert.ToDateTime(linha["DataCreate"])
@@ -110,8 +110,8 @@ namespace Negocios
                         PrimeiroNome = Convert.ToString(linha["PrimeiroNome"]),
                         SegundoNome = Convert.ToString(linha["SegundoNome"]),
                         Sobrenome = Convert.ToString(linha["Sobrenome"]),
-                        DiaDoNascimento = Convert.ToString(linha["DiaDoNascimento"]),
-                        MesDoNascimento = Convert.ToString(linha["MesDoNascimento"]),
+                        DiaDoNascimento = Convert.ToInt32(linha["DiaDoNascimento"]),
+                        MesDoNascimento = Convert.ToInt32(linha["MesDoNascimento"]),
                         AnoDoNascimento = Convert.ToInt32(linha["AnoDoNascimento"]),
                         MaeAlunoID = Convert.ToInt32(linha["MaeAlunoID"]),
                         DataCreate = Convert.ToDateTime(linha["DataCreate"])
