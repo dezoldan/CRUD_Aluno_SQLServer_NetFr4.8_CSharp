@@ -133,7 +133,6 @@ namespace Negocios
 
         public string AlterarPrimeiroNomeAluno(Aluno aluno)
         {
-
             try
             {
                 acessosqlserver.LimparParametros();
@@ -153,7 +152,7 @@ namespace Negocios
 
         /// <summary>
         /// Exemplo de como excluir um aluno
-        /// Num ambiente real não é necessário excluir o aluno,
+        /// Num ambiente real não é aconselhável excluir dados,
         /// bastando utilizar um flag de marcação para ativo ou inativo, por exemplo.
         /// O método utiliza uma procedure criada no SGBD SqlServer
         /// </summary>
