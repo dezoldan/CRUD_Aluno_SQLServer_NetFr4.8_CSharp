@@ -32,7 +32,6 @@ namespace Negocios
                 string alunoID = acessosqlserver.ExecutarManipulacao(
                     CommandType.StoredProcedure, "uspInserirAluno").ToString();
                 return alunoID;
-
             }
 
             catch (Exception ex)
