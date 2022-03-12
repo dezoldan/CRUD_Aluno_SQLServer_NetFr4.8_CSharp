@@ -7,7 +7,7 @@ namespace AcessoBancoDeDados
 {
     public class AcessoDadosSQLServer
     {        
-        /// definir a string de conexão com o banco na configuração do App no VS
+        /// defina a string de conexão com o banco na configuração do App no VS
         public SqlConnection Criarconexao()
         {
             return new SqlConnection(Settings.Default.StringConexao);
