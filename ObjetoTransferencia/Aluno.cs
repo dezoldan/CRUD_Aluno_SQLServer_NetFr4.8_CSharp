@@ -5,6 +5,7 @@ namespace ObjetoTransferencia
     /// <summary>
     /// Modelo básico de uma entidade Aluno para uma escola de educação infantil, 
     /// De 01 até 04 anos de idade
+    /// Exemplo para iniciantes em programação
     /// </summary>
     public class Aluno
     {
