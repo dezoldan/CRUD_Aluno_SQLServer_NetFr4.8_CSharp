@@ -6,10 +6,10 @@ CREATE PROCEDURE uspAlterarPrimeiroNomeAluno
 @PrimeiroNome nvarchar(50)
 AS
 BEGIN	
-	UPDATE Aluno
-	SET PrimeiroNome = @PrimeiroNome
-	WHERE AlunoID = @AlunoID
-	SELECT @AlunoID AS retorno
+UPDATE Aluno
+SET PrimeiroNome = @PrimeiroNome
+WHERE AlunoID = @AlunoID
+SELECT @AlunoID AS retorno
 END
 //////////////
 
