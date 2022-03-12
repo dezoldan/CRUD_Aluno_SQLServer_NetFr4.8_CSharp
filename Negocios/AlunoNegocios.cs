@@ -43,7 +43,7 @@ namespace Negocios
         /// Exemplo de como consultar todos os alunos, sem passar parâmetros
         /// Num ambiente real, o parâmetro é necessário para filtrar os dados e não 
         /// sobrecarregar a consulta
-        /// /// O método utiliza procedure criada no SGBD SqlServer
+        /// /// O método utiliza uma procedure criada no SGBD SqlServer
         /// </summary>
         public AlunoColecao ConsultaTodosAlunos()
         {
