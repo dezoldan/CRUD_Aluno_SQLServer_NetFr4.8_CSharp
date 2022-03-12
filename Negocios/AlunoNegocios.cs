@@ -16,7 +16,6 @@ namespace Negocios
 
         public string Inserir(Aluno aluno)
         {
-
             try
             {
 
@@ -50,7 +49,6 @@ namespace Negocios
         {
             try
             {
-
                 AlunoColecao alunoColecao = new AlunoColecao();
 
                 DataTable dataTableAluno = new DataTable();
