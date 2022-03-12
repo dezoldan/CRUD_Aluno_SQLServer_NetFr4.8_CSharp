@@ -4,5 +4,6 @@ namespace ObjetoTransferencia
 {
     public class AlunoColecao : List<Aluno>
     {
+
     }
 }
