@@ -1,4 +1,17 @@
-/// Crie as procedures em "ProcedimentosArmazenados" no seu SGBD do SqlServer, utilizando o Microsoft SQL Server Management Studio
+/// Crie as procedures em "ProcedimentosArmazenados" no seu SGBD do SqlServer, 
+/// Utilizando o Microsoft SQL Server Management Studio
+
+CREATE PROCEDURE uspAlterarPrimeiroNomeAluno
+@AlunoID int,
+@PrimeiroNome nvarchar(50)
+AS
+BEGIN	
+	UPDATE Aluno
+	SET PrimeiroNome = @PrimeiroNome
+	WHERE AlunoID = @AlunoID
+	SELECT @AlunoID AS retorno
+END
+//////////////
 
 CREATE PROCEDURE uspConsultaTodosAlunos
 AS 
