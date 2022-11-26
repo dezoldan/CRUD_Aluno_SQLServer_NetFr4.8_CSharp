@@ -9,11 +9,6 @@ namespace Negocios
     {
         readonly AcessoDadosSQLServer acessosqlserver = new AcessoDadosSQLServer();
 
-        /// <summary>
-        /// Exemplo de como inserir um aluno
-        /// O método utiliza uma procedure criada no SGBD SqlServer
-        /// </summary>
-
         public string Inserir(Aluno aluno)
         {
             try
@@ -39,12 +34,6 @@ namespace Negocios
             }
         }
 
-        /// <summary>
-        /// Exemplo de como consultar todos os alunos, sem passar parâmetros
-        /// Num ambiente real, o parâmetro é necessário para filtrar os dados e não 
-        /// sobrecarregar a consulta
-        /// /// O método utiliza uma procedure criada no SGBD SqlServer
-        /// </summary>
         public AlunoColecao ConsultaTodosAlunos()
         {
             try
@@ -82,11 +71,6 @@ namespace Negocios
 
         }
 
-        /// <summary>
-        /// Exemplo de como consular alunos passando um parametro, 
-        /// por exemplo, o primeiro nome do aluno.
-        /// O método utiliza uma procedure criada no SGBD SqlServer
-        /// </summary>
         public AlunoColecao ConsultaAlunoPorPrimeiroNome(string PrimeiroNomeAluno)
         {
             try
@@ -126,10 +110,6 @@ namespace Negocios
             }
 
         }
-        /// <summary>
-        /// Exemplo de como fazer um Update utilizando o atributo PrimeiroNome da entidade Aluno
-        /// O método utiliza uma procedure criada no SGBD SqlServer
-        /// </summary>        
 
         public string AlterarPrimeiroNomeAluno(Aluno aluno)
         {
@@ -150,12 +130,6 @@ namespace Negocios
             }
         }
 
-        /// <summary>
-        /// Exemplo de como excluir um aluno
-        /// Num ambiente real não é aconselhável excluir dados,
-        /// bastando utilizar um flag de marcação para ativo ou inativo, por exemplo.
-        /// O método utiliza uma procedure criada no SGBD SqlServer
-        /// </summary>
         public string ExcluirAluno(Aluno aluno)
         {
             try
